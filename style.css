@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2? family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #1f242d;
+}
+
+a{
+    color: #fff;
+text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.navbar .logo{
+font-size: 30px;
+font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navbar ul li a{
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.home-info h1{
+    font-size:55px;
+    margin-bottom: 48px;
+}.home-info h2{
+    font-size:32px;
+    margin-top: -10px;
+}
+    .home-info h2 span{
+        position: relative;
+        display: inline;
+        color: transparent;
+        -webkit-text-stroke: .7px #7cf03d;
+        animation: display-text 16s linear infinite;
+        animation-delay: calc(-4s * var(--i));
+    }
+    @keyframes display-text{
+        25%,100%{
+            display: none;
+        }
+    }
+        .home-info h2 span::before{
+            content: attr(data-text);
+            position: absolute;
+            width: 0%;
+            border-right: 2px solid #7cf03d;
+            color: #7cf03d;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: fill-text 4s linear infinite;
+        }
+    @keyframes fill-text {
+        10%,100%{
+            width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+.home-info p{
+    font-size:16px;
+    margin:10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items:  center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+font-size: 16px;
+color: #1f242d;
+font-weight: 600;
+transition: .5s;
+}
+
+
+
+
+.btn:hover{
+    background:transparent;
+    color:  #7cf03d;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci a{
+display: inline-flex;
+padding:8px;
+border:2px solid #7cf03d;
+border-radius:50%;
+    font-size: 20px;
+    color: #7cf03d;
+    margin-right:1.3px;
+    transition: .5s
+}
+.home-info .btn-sci .sci a:hover{
+    background: #7cf03d;
+    color: black;
+    box-shadow: 0 0 10px #7cf03d;
+}
+.b1{
+    background-image: url('/storage/emulated/0/blessing portfolio/20250809_154134 (4).png');
+    width:20px;
+    height: 20px;
+}
+.home-img {
+  margin-top: -418px; /* Move down by 50px */
+  margin-left: 530px;  /* Move right by 50px */
+}
+
+.home-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.home-img .img-box::after,
+.home-img .img-box::before{
+  content: '';
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  transform: rotate(0deg);
+       animation: rotate-border 10s linear infinite;
+}
+    .home-img .img-box::after {
+        animation-delay: -5s;align-self: 
+    }
+
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.home-img .img-box .img-item {
+  position: relative; /* Add this line */
+  width: 100%;
+  height: 100%;
+  background: #1f242d;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+    z-index: 1;
+    border: 2px solid #1f242d;
+}
+
+.home-img .img-box .img-item img {
+  position: absolute;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  top: -35px;
+    mix-blend-mode: lighten;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width:600px){
+    @import url('https://fonts.googleapis.com/css2? family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: white;
+}
+
+a{
+    color: #fff;
+text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.navbar .logo{
+font-size: 22px;
+font-weight: 700;
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+.navbar ul li a{
+    font-size: 12px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a {
+    color: #7cf03d;
+}
+
+
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 60px 9% 0;
+    color: #fff;
+}
+.home-info h1{
+    font-size:42px;
+    margin-bottom: 48px;
+}.home-info h2{
+    display: inline-block;
+    font-size:24px;
+    margin-top: -10px;
+}
+    
+    .home-info h2 span{
+        position: relative;
+        display: inline;
+        color: transparent;
+        -webkit-text-stroke: .7px #7cf03d;
+        /*animation: display-text 16s linear infinite;*/
+        animation-delay: calc(-4s * var(--i));
+    }
+    @keyframes display-text{
+        25%,100%{
+            display: none;
+        }
+    }
+        .home-info h2 span::before{
+            content: attr(data-text);
+            position: absolute;
+            width: 0%;
+            border-right: 2px solid #7cf03d;
+            color: #7cf03d;
+            white-space: nowrap;
+            overflow: hidden;
+            animation: fill-text 4s linear-infinite;
+        }
+    @keyframes fill-text {
+        10%,100%{
+            width: 0;
+        }
+        70%,90%{
+            width: 100%;
+        }
+    }
+.home-info p{
+    font-size:12px;
+    margin:10px 0 25px;
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items:  center;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    background: #7cf03d;
+    border: 2px solid #7cf03d;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #7cf03d;
+font-size: 16px;
+color: #1f242d;
+font-weight: 600;
+transition: .5s;
+}
+
+
+
+
+.btn:hover{
+    background:transparent;
+    color:  #7cf03d;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci a{
+display: inline-flex;
+padding:8px;
+border:2px solid #7cf03d;
+border-radius:50%;
+    
+    
+}
+.b1{
+    background-image: url('/storage/emulated/0/blessing portfolio/20250809_154134 (4).png');
+    width:20px;
+    height: 20px;
+}
+    .home-img {
+  margin-top: -265px; /* Move down by 50px */
+  margin-left: 218px; /* Move right by 50px */
+}
+
+.home-img .img-box{
+    position: relative;
+    width: 32vw;
+    height: 32vw;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+    
+    
+.home-img .img-box::before,
+   .home-img .img-box::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: conic-gradient(transparent, transparent, transparent, #7cf03d);
+  transform: rotate(0deg);
+       animation: rotate-border 10s linear infinite;
+}
+    .home-img .img-box::after {
+        animation-delay: -5s;align-self: 
+    }
+@keyframes rotate-border{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.home-img .img-box .img-item {
+  position: relative; /* Add this line */
+  width: 100%;
+  height: 100%;
+  
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+    z-index: 1;
+}
+
+.home-img .img-box .img-item img {
+  position: absolute;
+  display: block;
+  width: 85%;
+  object-fit: cover;
+  top: -35px;
+    mix-blend-mode: lighten;
+}
+.bar-animation{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    z-index: -1;
+}
+.bar{
+    width: 100%;
+    height: 100%;
+    background: #1f242d;
+    
+    
+}
+
+
+}
